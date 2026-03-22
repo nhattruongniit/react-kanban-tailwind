@@ -359,7 +359,7 @@ function App() {
 
               <div className="grid grid-cols-2 gap-6">
                 {/* Left Column */}
-                <div className="space-y-4">
+                <div className="flex flex-col space-y-4">
                   {/* Title */}
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -374,15 +374,14 @@ function App() {
                   </div>
 
                   {/* Description */}
-                  <div>
+                  <div className="flex-1 flex flex-col">
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Description
                     </label>
                     <textarea
                       value={editingTask.description}
                       onChange={(e) => setEditingTask({ ...editingTask, description: e.target.value })}
-                      rows={8}
-                      className="w-full px-3 py-2 bg-white border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+                      className="flex-1 w-full px-3 py-2 bg-white border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
                     ></textarea>
                   </div>
 
@@ -660,7 +659,7 @@ function App() {
 
               <div className="grid grid-cols-2 gap-6">
                 {/* Left Column */}
-                <div className="space-y-4">
+                <div className="flex flex-col space-y-4">
                   {/* Title */}
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -676,7 +675,7 @@ function App() {
                   </div>
 
                   {/* Description */}
-                  <div>
+                  <div className="flex-1 flex flex-col">
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Description
                     </label>
@@ -727,8 +726,7 @@ function App() {
                       placeholder="Write a description here"
                       value={newTask.description}
                       onChange={(e) => setNewTask({ ...newTask, description: e.target.value })}
-                      rows={6}
-                      className="w-full px-3 py-2 bg-white border border-gray-300 rounded-b-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+                      className="flex-1 w-full px-3 py-2 bg-white border border-gray-300 rounded-b-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
                     ></textarea>
                   </div>
                 </div>
