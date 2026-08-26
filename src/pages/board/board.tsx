@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router';
 
 interface Task {
   id: number;
@@ -164,13 +165,20 @@ function Board() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <nav className="bg-white border-b border-gray-200">
-        <div className="px-4 py-3">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-4">
-              <h1 className="text-xl font-semibold text-gray-900">HVAC Editor</h1>
-            </div>
+      <nav className="border-b border-gray-200 bg-white">
+        <div className="flex items-center justify-between px-6 py-3">
+          <div className="flex items-center space-x-4">
+            <h1 className="text-xl font-semibold text-gray-900">HVAC Editor</h1>
+          </div>
+          <Link to="/">
+            <img src="assets/logo.png" width={32} />
+          </Link>
+          <div className="flex items-center gap-3">
+            <img
+              src="https://flowbite.com/application-ui/demo/images/users/bonnie-green.png"
+              alt="You"
+              className="h-8 w-8 rounded-full"
+            />
           </div>
         </div>
       </nav>

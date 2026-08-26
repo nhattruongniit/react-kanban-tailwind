@@ -149,7 +149,9 @@ export default function Dashboard() {
     <div className="min-h-screen bg-gray-50">
       <nav className="border-b border-gray-200 bg-white">
         <div className="flex items-center justify-between px-6 py-3">
-          <h1 className="text-xl font-semibold text-gray-900">Trello Clone</h1>
+          <Link to="/">
+            <h1 className="text-xl font-semibold text-gray-900">Trello Clone</h1>
+          </Link>
           <div className="flex items-center gap-3">
             <input
               type="text"
